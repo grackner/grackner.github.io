@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Gabrielle Rackner Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+                            <li><a href="baseball.html">Testing Moneyball</a></li>
+                            <li><a href="kaggle.html">Kaggle ML Competition</a></li>
+                            <li><a href="gray.html">Gray's Anatomy?</a></li>
+							<li><a href="yelp.html">Yelp API</a></li>
+                            <li><a href="happyplaces.html">Happy Places</a></li>
+							
+							
+						</ul>
+						
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/uw.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Happy Places</h1>
+							</header>
+							<div class="content">
+								<p>Visualizing geolocation data from classmates' "happy places" on the University
+                                    of Washington campus. </p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Overview</h2>
+									</header> 
+									<p>Our goal was to create an infographic that grouped geolocation data in an interesting way
+										rather than by location similarities. Each student in one of my Python classes at UW
+										was given a balloon with a face (see photos) and we had to take a picture of the balloon
+										in our "happy place" and upload the name of the balloon, coordinates, photo and other data to Padlet.
+										We decided to group the happy places the type of location i.e. gym, shopping, etc. We used plotly to create a nested tree map. Although the code was very simple,
+										our biggest challenge was cleaning and organizing the data with the correct parents and nodes. 
+										Each happy place had to be assigned three different classifications that all needed to nestle 
+										correctly for the visualization. 
+									</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+						<section>
+							<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+									<div class="col-4"><span class="image fit"><img src="images/balloon1.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/balloon2.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/balloon3.jpg" alt="" /></span></div>
+								</div>
+							</div>
+						</section>
+						<section>
+								<a href="generic.html" class="image">
+										<img src="images/newplot.jpg" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Final Visualization</h3>
+											</header>
+											<p> Our infographic contains the different balloons and grouped by the type of locations that they visited.  The category with the most balloon visits was any outdoor space. We classified these into three groups: Park, Recreation, and Urban Spaces. Parks are green spaces usually with some sort of water feature. Frequent parks included Green Lake, and Gas Works. Recreation was any space where one or more sports was played there such as running, or canoeing. Common recreation places were Montlake Cut and Conibear Shellhouse. Urban spaces referred to a cross between nature and a shopping center or other industrial building. An example of this was apartment rooftops and University Village. Outdoors being the largest category makes sense to us because one notable characteristic about “Seattleites” is that most of them love doing outdoor recreational activities. 
+											</p>
+											<p>
+												We have a ton of green spaces in our city and most people care about the environment and take non-car transportation. Also many large outdoors companies started here like Brooks Running and REI. Urban green spaces are very popular, especially among the tech workers here. Young people in Seattle prefer a crossover between an urban jungle and parks as a place to live. Also, being outdoors and in nature releases endorphins which makes sense why these are most balloons’ “happy places.” Another major group was Food, Gym, and Home. There are subcategories beneath these as well except for Home. We didn’t split Home, Shopping and Entertainment into subcategories. We did this because the subcategories would be so small that they wouldn’t be significant. We differentiated between the categories using color. The “other” category (home, shopping, entertainment) is all one color.
+
+											</p>
+											
+										</div>
+									</div>
+								</section>
+							</section>
+
+						<!-- Three -->
+						<section id="three">
+                            <div class="inner">
+                                <header class="major">
+                                    <h2>About Me</h2>
+                                </header>
+                                <p>I am a recent graduate from the University of Washington. I studied Geographic Information Systems with
+                                    a focus in Data Science. My data science passions include sports analytics (ask my about my fantasy football
+                                    strategy) and Machine Learning. Outside of programming I love to hike, run ultramarathons and cook! Please
+                                    reach out to me via email or LinkedIn if you have any questions.
+                                </p>
+                            </div>
+                        </section>
+
+					</div>
+
+				<!-- Contact -->
+                <section id="contact">
+                    <div class="inner">
+                        <section>
+                            <form method="post" action="#">
+                                <div class="fields">
+                                    <div class="field half">
+                                        <label for="name">Name</label>
+                                        <input type="text" name="name" id="name" />
+                                    </div>
+                                    <div class="field half">
+                                        <label for="email">Email</label>
+                                        <input type="text" name="email" id="email" />
+                                    </div>
+                                    <div class="field">
+                                        <label for="message">Message</label>
+                                        <textarea name="message" id="message" rows="6"></textarea>
+                                    </div>
+                                </div>
+                                <ul class="actions">
+                                    <li><input type="submit" value="Send Message" class="primary" /></li>
+                                    <li><input type="reset" value="Clear" /></li>
+                                </ul>
+                            </form>
+                        </section>
+                        <section class="split">
+                            <section>
+                                <div class="contact-method">
+                                    <span class="icon solid alt fa-envelope"></span>
+                                    <h3>Email</h3>
+                                    <a href="#">rackner.gabrielle.2018@gmail.com</a>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="contact-method">
+                                    <span class="icon brands alt fa-linkedin-in"></span>
+                                    <h3>LinkedIn</h3>
+                                    <a href="https://www.linkedin.com/in/gabrielle-rackner-501b21176/">Let's Connect!</a>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="contact-method">
+                                    <span class="icon brands alt fa-github"></span>
+                                    <h3>GitHub</h3>
+                                    <a href="https://github.com/grackner">Visit Profile</a>
+                                </div>
+                            </section>
+                        </section>
+                    </div>
+                </section>
+
+            <!-- Footer -->
+                <footer id="footer">
+                    <div class="inner">
+                        
+                        <ul class="copyright">
+                            <li>&copy; Gabrielle Rackner Porfolio</li><li>I built this portfolio using HTML and starter code from <a href="https://html5up.net">HTML5 UP</a></li>
+                        </ul>
+                    </div>
+                </footer>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Gabrielle Rackner Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+                            <li><a href="baseball.html">Testing Moneyball</a></li>
+                            <li><a href="kaggle.html">Kaggle ML Competition</a></li>
+                            <li><a href="gray.html">Gray's Anatomy?</a></li>
+							<li><a href="yelp.html">Yelp API</a></li>
+                            <li><a href="happyplaces.html">Happy Places</a></li>
+						</ul>
+						
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/baseball.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Testing Moneyball</h1>
+							</header>
+							<div class="content">
+								<p>Examining the relationship between salary and age on a player’s performance in the MLB.
+                                </p>
+								<p>
+									Collaborator: Owen Schaff
+								</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Overview</h2>
+									</header>
+									<p>In this project we looked at many graphs that compared a player's age, salary, and WAR. WAR, or wins above replacement, measures all aspects of a player's game to figure out how many wins they are worth more than a replacement level player at the same position. This statistic allows us to look at both pitchers and batters and compare their value, which cannot be done through regular metrics. </p>
+                                    <p>Analysis of salary and performance is important because teams could save millions of dollars on players and decide if a player is worth a large contract. This would also make player acquisition more fair because smaller teams could still get valuable players, since a player's value won’t be over inflated by a bidding war for contracts. If our analysis proves that these long-term high-average-value contracts are fiscally effective, there might be shorter contracts in the future of MLB. This would ensure that players aren’t paid these 10-year, multi-million dollar contracts when they will only be worth it for their prime years. On the contrary, for players that are being underpaid yet proved valuable with their WAR vs salary statistic, they could use this data to help them receive bigger contracts. </p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+									<a href="generic.html" class="image">
+										<img src="images/baseball_data.jpg" alt="" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h2>Data</h2>
+											</header>
+                                            <h4>MLB Player Data</h4>
+                                            <p>This dataset is only for the 2015 season, and contains player name, team, games played, age, and total WAR for the season. This dataset gives us access to age and WAR, which when combined with the salary dataset, lets us compare and contrast for a season. This list also only contains qualified hitters and pitchers, which means they had to have 3.1 plate appearances per total games played by the team, or one inning per team game played. <a href="https://www.fangraphs.com/leaders.aspx?pos=all&stats=bat&lg=all&qual=y&type=c,3,4,58&season=2015&month=0&season1=2015&ind=0&team=0&rost=0&age=0&filter=&players=0&startdate=&enddate=">MLB player dataset</a></p>
+								            <h4>MLB Salary Data</h4>
+                                            <p>This dataset contains the year, team ID, player ID, and salary. <a href="https://www.kaggle.com/open-source-sports/baseball-databank?select=Salaries.csv">Salary dataset</a></p>
+                                            <h4>Master Dataset</h4>
+                                            <p> This dataset allowed us to combine both the salary and the WAR dataset. <a href="https://www.kaggle.com/open-source-sports/baseball-databank?select=Master.csv">Master dataset</a></p> 
+                                        </div>
+									</div>
+								</section>
+								<section>
+									<a href="generic.html" class="image">
+										<img src="images/salary_vs_time.jpg" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Salary Over Time</h3>
+											</header>
+											<p>Our goal is to see how much salary plays a role in performance and how this varies by age. From 2003 to 2015 we can see that there is a positive linear pattern in salaries in the league. The average salary for a player in the league in 2004 was 2.5 million, and in 2015 the average salary for a player in the league was 4.25 million. That is a change of 1.75 million in about 11 years. So we can conclude that salaries have, on average, increased over time in the MLB.</p>
+										
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="generic.html" class="image">
+										<img src="images/salaryvswar.jpg" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>WAR vs Salary</h3>
+											</header>
+											<p>We found that the WAR and Salary don’t have a strong linear relationship, if anything, there is a slight negative relationship between salary and WAR. As salary increases, we found that WAR actually decreases a small amount. This means that even if teams sign these new “high-value” players to a large contract, there is no guarantee that they are going to produce positive results and therefore it may not be worth it to pay players such a large sum. Especially at the end of their career. As we see in the next graph, salary tends to increase with age despite the fact that WAR also decreases with age. This is because teams will sign older players, longer contracts with consistently high salaries in order to respect loyalty and the amount of time a player has dedicated to the league. But it is not worth it to pay these older players larger sums when they are producing worse results than younger players who are getting paid less. It would make the most sense to pay younger players more, when they are in their prime.</p>
+											<p>We observed that a 36 year-old in the league would be paid on average, 1.75 million whereas players less than 26 make less than one million a year, often 500,000. Even though the average WAR of a 26 year-old is larger than the average WAR of a 36 year-old.</p>
+                                        </div>
+									</div>
+								</section>
+                                <section>
+									<a href="generic.html" class="image">
+										<img src="images/salaryvsage.jpg" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Salary vs Age</h3>
+											</header>
+											<p> We graphed the Salary vs age of a MLB player during the 2015 season(salary in tens of millions). As it can be seen in the graph, there is a strong correlation between age and salary. This was expected, because if players entering the league make the league minimum, the salary would have to go up for those players as they continue playing baseball. However, on the graph you can see that the average 25 year old in the MLB makes around 3 million dollars, while the average 30 year old makes 9. That is a 300% increase and shows some serious wage inequalities within the sport. For this to be cost effective, players would have to increase their impact by threefold. </p>
+                                        </div>
+									</div>
+								</section>
+                                <section>
+									<a href="generic.html" class="image">
+										<img src="images/agevswar.jpg" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>WAR vs Age</h3>
+											</header>
+											<p>We also looked at the comparison of age and WAR. Out of all qualified players in the 2015 season, we found that there is a slightly negative, if not no correlation, between age and WAR. This is very interesting, because players are supposed to be performing better, not worse, when they get contracts/age into their “prime”. Another detail about the graph is that the two highest WAR players were 23. And while that may skew the data in favor of younger players, it really shows that players can be the best of the best when coming into the league. When you compare this graph to the salary vs age graph, you can see the outlying issue. There is a slightly negative correlation between WAR and age, but there is a very positive relationship between salary and age. This means that in most cases a contract given to a player that has a long duration will be much less valuable than one for a short period of time. The graph shows that players over the age of 36, who are making on average over 15 million a year, have about 66% of the production of a 24 year old while making almost five times as much.  </p>
+                                        </div>
+									</div>
+								</section>
+                                <section>
+									<a href="generic.html" class="image">
+										<img src="images/mlbaseball.jpg" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Predicting Performance</h3>
+											</header>
+											<p>Lastly, we created a machine learning model to predict WAR based on age and salary. From our code, we got a mean squared error of varying between 5 and 11 for the testing data, varying on each run of the code. This is not the greatest number, but it still confirms our original suspicions that an increase in salary does not lead to an increase in WAR. A low mean squared error on testing means that there is not enough correlation between WAR, age and salary. The data shows that paying a player more money does not mean that they will have more impact than an average starter. To make our model more accurate we could include data from more than one year to see if 2015 was an outlier year or not. </p>
+                                            <p>We used scikit-learn libraries to make a decision tree regression model. Our training-test data split was 80/20. Please see my Github for the code.</p>
+                                        </div>
+										<ul class="actions">
+											<li><a href="https://github.com/grackner/Baseball-Analytics" class="button">View full code</a></li>
+										</ul>
+									</div>
+								</section>
+							</section>
+
+						<!-- Three -->
+                        <section id="three">
+                            <div class="inner">
+                                <header class="major">
+                                    <h2>About Me</h2>
+                                </header>
+                                <p>I am a recent graduate from the University of Washington. I studied Geographic Information Systems with
+                                    a focus in Data Science. My data science passions include sports analytics (ask my about my fantasy football
+                                    strategy) and Machine Learning. Outside of programming I love to hike, run ultramarathons and cook! Please
+                                    reach out to me via email or LinkedIn if you have any questions.
+                                </p>
+                            </div>
+                        </section>
+
+					</div>
+
+				<!-- Contact -->
+                <section id="contact">
+                    <div class="inner">
+                        <section>
+                            <form method="post" action="#">
+                                <div class="fields">
+                                    <div class="field half">
+                                        <label for="name">Name</label>
+                                        <input type="text" name="name" id="name" />
+                                    </div>
+                                    <div class="field half">
+                                        <label for="email">Email</label>
+                                        <input type="text" name="email" id="email" />
+                                    </div>
+                                    <div class="field">
+                                        <label for="message">Message</label>
+                                        <textarea name="message" id="message" rows="6"></textarea>
+                                    </div>
+                                </div>
+                                <ul class="actions">
+                                    <li><input type="submit" value="Send Message" class="primary" /></li>
+                                    <li><input type="reset" value="Clear" /></li>
+                                </ul>
+                            </form>
+                        </section>
+                        <section class="split">
+                            <section>
+                                <div class="contact-method">
+                                    <span class="icon solid alt fa-envelope"></span>
+                                    <h3>Email</h3>
+                                    <a href="#">rackner.gabrielle.2018@gmail.com</a>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="contact-method">
+                                    <span class="icon brands alt fa-linkedin-in"></span>
+                                    <h3>LinkedIn</h3>
+                                    <a href="https://www.linkedin.com/in/gabrielle-rackner-501b21176/">Let's Connect!</a>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="contact-method">
+                                    <span class="icon brands alt fa-github"></span>
+                                    <h3>GitHub</h3>
+                                    <a href="https://github.com/grackner">Visit Profile</a>
+                                </div>
+                            </section>
+                        </section>
+                    </div>
+                </section>
+
+            <!-- Footer -->
+                <footer id="footer">
+                    <div class="inner">
+                        
+                        <ul class="copyright">
+                            <li>&copy; Gabrielle Rackner Porfolio</li><li>I built this portfolio using HTML and starter code from <a href="https://html5up.net">HTML5 UP</a></li>
+                        </ul>
+                    </div>
+                </footer>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
